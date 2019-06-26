@@ -1,6 +1,9 @@
 package com.example.monytor;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -11,35 +14,42 @@ import android.widget.Toast;
 
 public class StartMonitoring extends AppCompatActivity {
 
+    private AlertDialog.Builder dialog_builder;
     private Button button_start_monitoring;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_monitoring);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Start monitoring
         button_start_monitoring = findViewById(R.id.button_start_monitoring);
         button_start_monitoring.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(), "monitoring...",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(StartMonitoring.this, Monitoring.class);
+                startActivity(intent);
             }
         });
+
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_start_monitoring, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -47,7 +57,22 @@ public class StartMonitoring extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+
+            Intent intent = new Intent(StartMonitoring.this, Settings.class);
+            startActivity(intent);
+        }
+        else if(id == R.id.action_about) {
+
+            dialog_builder = new AlertDialog.Builder(StartMonitoring.this);
+            dialog_builder.setTitle("About");
+            dialog_builder.setMessage(R.string.about_application);
+            dialog_builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    dialog.dismiss();
+                }
+            }).show();
         }
 
         return super.onOptionsItemSelected(item);

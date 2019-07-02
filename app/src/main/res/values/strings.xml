@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Monytor</string>
+    <string name="title_activity_monitoring">Monitoring</string>
+    <string name="title_activity_settings">Settings</string>
 
     <string name="action_settings">Settings</string>
     <string name="action_about">About</string>
@@ -11,6 +13,10 @@
 
     <string name="about_application">Monytor is an android application which provides monitoring
         of variables such as temperature, humidity etc.</string>
-    <string name="title_activity_monitoring">Monitoring</string>
-    <string name="title_activity_settings">Settings</string>
+
+    <string name="legend">Legend:</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="co2_level">CO2 level</string>
+    <string name="illumination">Illumination</string>
 </resources>

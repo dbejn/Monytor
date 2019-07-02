@@ -8,4 +8,15 @@
     tools:context=".Settings"
     tools:showIn="@layout/activity_settings">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/microelectronics"
+        android:scaleType="centerCrop"
+        android:foreground="@color/colorPrimaryTransparent"/>
+
 </android.support.constraint.ConstraintLayout>

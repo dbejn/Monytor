@@ -3,4 +3,10 @@
     <color name="colorPrimary">#003465</color>
     <color name="colorPrimaryDark">#001C38</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimaryTransparent">#CC003465</color>
+
+    <color name="colorTemperature">#8F0000</color>
+    <color name="colorHumidity">#059499</color>
+    <color name="colorCO2">#015901</color>
+    <color name="colorIllumination">#E88C02</color>
 </resources>

@@ -4,15 +4,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_check_time_span"
+        android:id="@+id/action_24h"
         android:orderInCategory="100"
-        android:title="@string/action_check_time_span"
+        android:title="@string/action_24h"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_check_average"
+        android:id="@+id/action_week"
         android:orderInCategory="100"
-        android:title="@string/action_check_average"
+        android:title="@string/action_week"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_month"
+        android:orderInCategory="100"
+        android:title="@string/action_month"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_statistics"
+        android:orderInCategory="100"
+        android:title="@string/action_statistics"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_change_station"
+        android:orderInCategory="100"
+        android:title="@string/action_change_station"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_adjust"
+        android:orderInCategory="100"
+        android:title="@string/action_adjust"
         app:showAsAction="never" />
 
 </menu>

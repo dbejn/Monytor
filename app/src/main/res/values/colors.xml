@@ -9,4 +9,5 @@
     <color name="colorHumidity">#059499</color>
     <color name="colorCO2">#015901</color>
     <color name="colorIllumination">#E88C02</color>
+    <color name="colorPressure">#5F0082</color>
 </resources>

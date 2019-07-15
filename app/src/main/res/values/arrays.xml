@@ -16,4 +16,12 @@
         <item>Illumination</item>
     </array>
 
+    <array name="statistics">
+        <item>Amphitheatre A3</item>
+        <item>Amphitheatre A4</item>
+        <item>Laboratory 7C4</item>
+        <item>Laboratory 327</item>
+        <item>Overall</item>
+    </array>
+
 </resources>

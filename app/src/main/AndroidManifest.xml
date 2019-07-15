@@ -14,6 +14,24 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Statistics"
+            android:label="@string/title_activity_statistics"
+            android:parentActivityName=".Monitoring"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.monytor.Monitoring" />
+        </activity>
+        <activity
+            android:name=".AdjustVariable"
+            android:label="@string/title_activity_adjust_variable"
+            android:parentActivityName=".Monitoring"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.monytor.Monitoring" />
+        </activity>
+        <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
             android:parentActivityName=".StartMonitoring"

@@ -1,6 +1,7 @@
 package com.example.monytor;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -74,7 +75,7 @@ public class Monitoring extends AppCompatActivity {
 
     private RequestQueue request_queue;
     private StringRequest string_request;
-    private static final String url_get_data = "http://192.168.0.103:80/get_data.php";
+    private static final String url_get_data = "http://192.168.0.100:80/get_data.php";
 
     private List<Integer> temperature_data;
     private List<Integer> humidity_data;
@@ -91,7 +92,7 @@ public class Monitoring extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        setTitle("Station: Amphitheatre A3, 24h");
+        setTitle("Laboratory 327, last month");
 
         setCheckBoxes();
 
@@ -250,11 +251,19 @@ public class Monitoring extends AppCompatActivity {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
 
-                    Toast.makeText(Monitoring.this, which + ". variable"
-                            , Toast.LENGTH_SHORT).show();
+                    if (which == 0) {
+
+                        Intent intent = new Intent(Monitoring.this, AdjustVariable.class);
+                        startActivity(intent);
+                    }
                 }
             });
             dialog_builder.create().show();
+        }
+        else if (id == R.id.action_statistics) {
+
+            Intent intent = new Intent(Monitoring.this, Statistics.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

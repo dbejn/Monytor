@@ -36,4 +36,33 @@
     <string name="RH">RH%</string>
     <string name="percent">%</string>
     <string name="lux">lx</string>
+    <string name="title_activity_adjust_variable">AdjustVariable</string>
+
+    <string name="adjust_info">The latest measured value for %1$s in %2$s is &lt;font color="#D81B60"&gt;&lt;b&gt;%3$s&lt;/b&gt;&lt;/font&gt; %4$s.</string>
+    <string name="adjust_info_date">Measuring done at %1$s.</string>
+    <string name="adjust_change">Desired value is </string>
+    <string name="adjust_variable">adjust variable</string>
+    <string name="title_activity_statistics">Statistics</string>
+
+    <!-- statistics -->
+    <string name="temperature_minimum">minimum: &lt;b&gt;20.39&lt;/b&gt; ℃, measured at 21.06. 03:42h</string>
+    <string name="temperature_maximum">maximum: &lt;b&gt;29.74&lt;/b&gt; ℃, measured at 21.06. 10:23h</string>
+    <string name="temperature_average">average: &lt;b&gt;25.11&lt;/b&gt; ℃</string>
+
+    <string name="pressure_minimum">minimum: &lt;b&gt;985.92&lt;/b&gt; hPa, measured at 21.06. 08:47h</string>
+    <string name="pressure_maximum">maximum: &lt;b&gt;996.31&lt;/b&gt; hPa, measured at 21.06. 11:58h</string>
+    <string name="pressure_average">average: &lt;b&gt;991.65&lt;/b&gt; hPa</string>
+
+    <string name="humidity_minimum">minimum: &lt;b&gt;53.25&lt;/b&gt; RH%, measured at 20.06. 19:14h</string>
+    <string name="humidity_maximum">maximum: &lt;b&gt;65.08&lt;/b&gt; RH%, measured at 21.06. 10:58h</string>
+    <string name="humidity_average">average: &lt;b&gt;56.76&lt;/b&gt; RH%</string>
+
+    <string name="co2_level_minimum">minimum: &lt;b&gt;7.85&lt;/b&gt; %, measured at 20.06. 22:38h</string>
+    <string name="co2_level_maximum">maximum: &lt;b&gt;30.36&lt;/b&gt; %, measured at 20.06. 15:11h</string>
+    <string name="co2_level_average">average: &lt;b&gt;16.92&lt;/b&gt; %</string>
+
+    <string name="illumination_minimum">minimum: &lt;b&gt;0.00&lt;/b&gt; lx, measured at 20.06. 01:05h</string>
+    <string name="illumination_maximum">maximum: &lt;b&gt;228.42&lt;/b&gt; lx, measured at 21.06. 12:25h</string>
+    <string name="illumination_average">average: &lt;b&gt;134.69&lt;/b&gt; lx</string>
+    <!-- .......... -->
 </resources>
